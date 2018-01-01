@@ -10,7 +10,6 @@ http://creativecommons.org/licenses/by/3.0/
 ------------------------------------------------*/
 body {
     font-family: 'Open Sans', sans-serif;
-    padding-top: 60px;
 }
 
  #wrapper {
@@ -30,6 +29,12 @@ body {
     background-color:transparent;
     padding:10px;
     min-height:1200px;
+}
+
+#footer {
+    color: #607d8b;
+    text-align: center;
+    font-weight: 500;
 }
 
 .text-center {
@@ -238,7 +243,7 @@ margin:0px;
 }
 .top-navbar .navbar-brand {
 color: #fff;
-width: 260px;
+width: 200px;
 text-align: left;
 height: 60px;
 font-size: 30px;
@@ -404,17 +409,21 @@ line-height: 1.428571429;
  
  @media(min-width:768px) {
      #page-wrapper{
-               margin: 0 0 0 260px;
-        padding: 15px 30px;
-        min-height: 1200px;
+         margin: 0 0 0 200px;
+         padding: 15px 30px;
+         min-height: 1200px;
 		
     }
-	
+
+     .top-navbar {
+         width: 200px;
+     }
 	
     .navbar-side {
         z-index: 1;
-        position: absolute;
-        width: 260px;
+        position: fixed;
+        width: 200px;
+        padding-top: 60px;
     }
 
    .navbar {
