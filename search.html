@@ -15,6 +15,8 @@
     <link href="assets/css/custom-styles.css" rel="stylesheet" />
     <!-- Google Fonts-->
     <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css' />
+    <!-- Table Expand Styles-->
+    <link rel="stylesheet" href="assets/css/bootstrap-table-expandable.css">
 </head>
 
 <body>
@@ -73,7 +75,7 @@
                     <h3 class="panel-heading">查询结果</h3>
                     <div class="panel-body">
                         <div class="table-responsive">
-                            <table class="table table-bordered table-hover" style="background-color: #f3f3f3">
+                            <table class="table table-bordered table-hover table-expandable" style="background-color: #f3f3f3">
                                 <thead>
                                 <tr style="background-color: #428bca; color: white">
                                     <th>No.</th>
@@ -91,34 +93,79 @@
                                     <td>10</td>
                                     <td>10</td>
                                 </tr>
+
+                                <tr>
+                                    <td colspan="6">
+                                        <table class="table table-bordered table-hover" style="background-color: #fafafa">
+                                            <thead>
+                                            <tr class="info">
+                                                <th>No.</th>
+                                                <th>电影名称</th>
+                                                <th>评论</th>
+                                                <th>评论用户</th>
+                                                <th>评分</th>
+                                            </tr>
+                                            </thead>
+                                            <tbody>
+                                            <tr onclick="window.open('https://www.amazon.com/dp/B00006HAXW/');" style="cursor: pointer">
+                                                <td>1</td>
+                                                <td>星际穿越</td>
+                                                <td>......值得看......</td>
+                                                <td>用户1</td>
+                                                <td>9.8</td>
+                                            </tr>
+                                            <tr onclick="window.open('https://www.amazon.com/dp/B00006HAXW/');" style="cursor: pointer">
+                                                <td>2</td>
+                                                <td>星际穿越</td>
+                                                <td>......值得看......</td>
+                                                <td>用户1</td>
+                                                <td>9.8</td>
+                                            </tr>
+                                            </tbody>
+                                        </table>
+                                    </td>
+                                </tr>
+
                                 <tr>
                                     <td>2</td>
-                                    <td>烂片</td>
+                                    <td>诺兰出品必属精品</td>
                                     <td>500</td>
                                     <td>10</td>
                                     <td>10</td>
                                 </tr>
+
                                 <tr>
-                                    <td>3</td>
-                                    <td>感动</td>
-                                    <td>800</td>
-                                    <td>10</td>
-                                    <td>10</td>
+                                    <td colspan="6">
+                                        <table class="table table-bordered table-hover" style="background-color: #fafafa">
+                                            <thead>
+                                            <tr class="info">
+                                                <th>No.</th>
+                                                <th>电影名称</th>
+                                                <th>评论</th>
+                                                <th>评论用户</th>
+                                                <th>评分</th>
+                                            </tr>
+                                            </thead>
+                                            <tbody>
+                                            <tr onclick="window.open('https://www.amazon.com/dp/B00006HAXW/');" style="cursor: pointer">
+                                                <td>1</td>
+                                                <td>星际穿越</td>
+                                                <td>......诺兰出品必属精品......</td>
+                                                <td>用户1</td>
+                                                <td>9.8</td>
+                                            </tr>
+                                            <tr onclick="window.open('https://www.amazon.com/dp/B00006HAXW/');" style="cursor: pointer">
+                                                <td>2</td>
+                                                <td>星际穿越</td>
+                                                <td>......诺兰出品必属精品......</td>
+                                                <td>用户1</td>
+                                                <td>9.8</td>
+                                            </tr>
+                                            </tbody>
+                                        </table>
+                                    </td>
                                 </tr>
-                                <tr>
-                                    <td>4</td>
-                                    <td>经典之作</td>
-                                    <td>222</td>
-                                    <td>10</td>
-                                    <td>10</td>
-                                </tr>
-                                <tr>
-                                    <td>5</td>
-                                    <td>诺兰出品必属精品</td>
-                                    <td>400</td>
-                                    <td>10</td>
-                                    <td>10</td>
-                                </tr>
+
                                 </tbody>
                             </table>
                         </div>
@@ -156,6 +203,8 @@
 <!-- Morris Chart Js -->
 <script src="assets/js/morris/raphael-2.1.0.min.js"></script>
 <script src="assets/js/morris/morris.js"></script>
+<!-- Table Expand Js -->
+<script src="assets/js/bootstrap-table-expandable.js"></script>
 <!-- Custom Js -->
 <script src="assets/js/custom-scripts.js"></script>
 

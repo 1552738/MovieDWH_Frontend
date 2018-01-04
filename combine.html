@@ -15,6 +15,8 @@
     <link href="assets/css/custom-styles.css" rel="stylesheet" />
     <!-- Google Fonts-->
     <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css' />
+    <!-- Table Expand Styles-->
+    <link rel="stylesheet" href="assets/css/bootstrap-table-expandable.css">
 </head>
 
 <body>
@@ -105,7 +107,7 @@
                     <h3 class="panel-heading">查询结果</h3>
                     <div class="panel-body">
                         <div class="table-responsive">
-                            <table class="table table-bordered table-hover" style="background-color: #f3f3f3">
+                            <table class="table table-bordered table-hover table-expandable" style="background-color: #f3f3f3">
                                 <thead>
                                 <tr style="background-color: #428bca; color: white">
                                     <th>No.</th>
@@ -123,6 +125,54 @@
                                     <td>10</td>
                                     <td>10</td>
                                 </tr>
+
+                                <tr>
+                                    <td colspan="6">
+                                        <table class="table table-bordered table-hover" style="background-color: #fafafa">
+                                            <thead>
+                                            <tr class="info">
+                                                <th>No.</th>
+                                                <th>电影名称</th>
+                                                <th>导演</th>
+                                                <th>主演</th>
+                                                <th>演员</th>
+                                                <th>上映时间</th>
+                                                <th>类别</th>
+                                                <th>版本</th>
+                                                <th>时长</th>
+                                                <th>评分</th>
+                                            </tr>
+                                            </thead>
+                                            <tbody>
+                                            <tr onclick="window.open('https://www.amazon.com/dp/B00006HAXW/');" style="cursor: pointer">
+                                                <td>1</td>
+                                                <td>星际穿越</td>
+                                                <td>诺兰</td>
+                                                <td>演员1</td>
+                                                <td>演员2</td>
+                                                <td>2017年5月20日</td>
+                                                <td>Action</td>
+                                                <td>英文3D</td>
+                                                <td>125分钟</td>
+                                                <td>9.6</td>
+                                            </tr>
+                                            <tr onclick="window.open('https://www.amazon.com/dp/B00006HAXW/');" style="cursor: pointer">
+                                                <td>2</td>
+                                                <td>星际穿越</td>
+                                                <td>诺兰</td>
+                                                <td>演员1</td>
+                                                <td>演员2</td>
+                                                <td>2017年5月20日</td>
+                                                <td>Action</td>
+                                                <td>英文3D</td>
+                                                <td>125分钟</td>
+                                                <td>9.6</td>
+                                            </tr>
+                                            </tbody>
+                                        </table>
+                                    </td>
+                                </tr>
+
                                 <tr>
                                     <td>2</td>
                                     <td>导演1，Action</td>
@@ -130,27 +180,54 @@
                                     <td>10</td>
                                     <td>10</td>
                                 </tr>
+
                                 <tr>
-                                    <td>3</td>
-                                    <td>导演1，演员1</td>
-                                    <td>8</td>
-                                    <td>10</td>
-                                    <td>10</td>
+                                    <td colspan="6">
+                                        <table class="table table-bordered table-hover" style="background-color: #fafafa">
+                                            <thead>
+                                            <tr class="info">
+                                                <th>No.</th>
+                                                <th>电影名称</th>
+                                                <th>导演</th>
+                                                <th>主演</th>
+                                                <th>演员</th>
+                                                <th>上映时间</th>
+                                                <th>类别</th>
+                                                <th>版本</th>
+                                                <th>时长</th>
+                                                <th>评分</th>
+                                            </tr>
+                                            </thead>
+                                            <tbody>
+                                            <tr onclick="window.open('https://www.amazon.com/dp/B00006HAXW/');" style="cursor: pointer">
+                                                <td>1</td>
+                                                <td>星际穿越</td>
+                                                <td>诺兰</td>
+                                                <td>演员1</td>
+                                                <td>演员2</td>
+                                                <td>2017年5月20日</td>
+                                                <td>Action</td>
+                                                <td>英文3D</td>
+                                                <td>125分钟</td>
+                                                <td>9.6</td>
+                                            </tr>
+                                            <tr onclick="window.open('https://www.amazon.com/dp/B00006HAXW/');" style="cursor: pointer">
+                                                <td>2</td>
+                                                <td>星际穿越</td>
+                                                <td>诺兰</td>
+                                                <td>演员1</td>
+                                                <td>演员2</td>
+                                                <td>2017年5月20日</td>
+                                                <td>Action</td>
+                                                <td>英文3D</td>
+                                                <td>125分钟</td>
+                                                <td>9.6</td>
+                                            </tr>
+                                            </tbody>
+                                        </table>
+                                    </td>
                                 </tr>
-                                <tr>
-                                    <td>4</td>
-                                    <td>2017年第一季度，演员2，Horror</td>
-                                    <td>2</td>
-                                    <td>10</td>
-                                    <td>10</td>
-                                </tr>
-                                <tr>
-                                    <td>5</td>
-                                    <td>movie2，演员3</td>
-                                    <td>4</td>
-                                    <td>10</td>
-                                    <td>10</td>
-                                </tr>
+
                                 </tbody>
                             </table>
                         </div>
@@ -188,6 +265,8 @@
 <!-- Morris Chart Js -->
 <script src="assets/js/morris/raphael-2.1.0.min.js"></script>
 <script src="assets/js/morris/morris.js"></script>
+<!-- Table Expand Js -->
+<script src="assets/js/bootstrap-table-expandable.js"></script>
 <!-- Custom Js -->
 <script src="assets/js/custom-scripts.js"></script>
 
