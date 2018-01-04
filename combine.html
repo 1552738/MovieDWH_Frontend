@@ -57,24 +57,33 @@
                 <div class="col-lg-12">
                     <form role="form">
                         <div class="form-group col-lg-4 col-md-4">
-                            <label>年</label>
-                            <input class="form-control" placeholder="请输入年份">
-                        </div>
-                        <div class="form-group col-lg-4 col-md-4">
-                            <label>月</label>
-                            <input class="form-control" placeholder="请输入月份">
-                        </div>
-                        <div class="form-group col-lg-4 col-md-4">
-                            <label>日</label>
-                            <input class="form-control" placeholder="请输入日期">
+                            <label>日期</label>
+                            <input class="form-control" type="date" placeholder="请输入年月日">
                         </div>
                         <div class="form-group col-lg-4 col-md-4">
                             <label>季度</label>
-                            <input class="form-control" placeholder="请输入季度">
+                            <select class="form-control" style="color: gray">
+                                <option value="" style="display: none" disabled selected>请选择季度</option>
+                                <option value="">无要求</option>
+                                <option value="1">第一季度</option>
+                                <option value="2">第二季度</option>
+                                <option value="3">第三季度</option>
+                                <option value="4">第四季度</option>
+                            </select>
                         </div>
                         <div class="form-group col-lg-4 col-md-4">
                             <label>星期</label>
-                            <input class="form-control" placeholder="请输入星期">
+                            <select class="form-control" style="color: gray">
+                                <option value="" style="display: none" disabled selected>请选择星期</option>
+                                <option value="">无要求</option>
+                                <option value="1">星期一</option>
+                                <option value="2">星期二</option>
+                                <option value="3">星期三</option>
+                                <option value="4">星期四</option>
+                                <option value="5">星期五</option>
+                                <option value="6">星期六</option>
+                                <option value="7">星期日</option>
+                            </select>
                         </div>
                         <div class="form-group col-lg-4 col-md-4">
                             <label>电影名称</label>
